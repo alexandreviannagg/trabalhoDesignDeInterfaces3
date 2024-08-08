@@ -1,0 +1,152 @@
+:root {
+    --cor-destaque: #5c0601;
+}
+
+.container-fluid {
+    padding: 0%;
+}
+
+/* TITULO H1 */
+
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: #5c0601 3px solid;
+    animation: backwards;
+}
+
+h1:hover {
+    border-bottom: black 3px solid;
+    color: #5c0601;
+}  
+
+/* style p */
+
+.estilo-text-p {
+    line-height: 23px;
+}
+ 
+
+/* NAV */
+
+.navbar {
+    background-color: #ffffffa9;
+    width: 100%;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/menu\ drop.png);
+}
+.navbar-light .navbar-nav {
+    margin-left: 30px;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: rgb(11, 11, 11);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #5c0601;
+}
+
+
+
+/* sobre */
+
+#sobre {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+.text-sobre p, .text-sobre h1 {
+    color: white;
+    animation-name: animacao;
+    animation-duration: 1s;
+}
+#sobre .d-flex {
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.708);
+}
+
+
+/* modal */
+
+.btn-modal {
+    background-color: #5c0601;
+    border: black 2px solid;
+    color: white;
+    transition: all 0.3s ease-in 0.05s;
+}
+
+.btn-modal:hover {
+    background-color: black;
+    color: white;
+    border: #5c0601 2px solid;
+    padding: 8px 25px;
+}
+
+/* form */
+.btn-center {
+    display: flex;
+    justify-content: center;
+  }
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--cor-destaque);
+}
+
+/* tabela */
+.table {
+    border-color: #5c0601;
+  }
+  .table thead th {
+    background-color: #f8f9fa;
+    border-color: #5c0601;
+  }
+  .table tbody td, .table tbody th {
+    border-color: #5c0601;
+  }
+  .table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+
+
+/* footer */
+
+footer {
+    background-color: var(--cor-destaque);
+}
+.direitos {
+    background-color: black;
+}
+
+@keyframes animacao {
+    from {
+        opacity: 0;
+        transform: translate(-100vw, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@media  (max-width:992px) {
+    #sobre .d-flex {
+        flex-direction: column;
+    }
+
+    #servicos .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+}
