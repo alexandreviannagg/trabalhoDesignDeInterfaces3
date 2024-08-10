@@ -1,5 +1,5 @@
 :root {
-    --cor-destaque: #5c0601;
+    --destaque-cor: #00be03;
 }
 
 .container-fluid {
@@ -9,23 +9,42 @@
 /* TITULO H1 */
 
 h1 {
+    font-family: "Platypi", serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: black;
+    font-style: normal;
     text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 800;
-    cursor: pointer;
     display: inline-block;
-    border-bottom: #5c0601 3px solid;
-    animation: backwards;
+    cursor: pointer;
 }
 
 h1:hover {
     border-bottom: black 3px solid;
-    color: #5c0601;
-}  
+    color: var(--destaque-cor);
+}
+
+/* title 2 */
+
+.sub-titile {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--destaque-cor);
+    font-style: normal;
+    cursor: pointer;
+}
 
 /* style p */
 
 .estilo-text-p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 10px;
     line-height: 23px;
 }
  
@@ -43,13 +62,17 @@ h1:hover {
     margin-left: 30px;
 }
 .navbar-light .navbar-nav .nav-item .nav-link {
-    color: rgb(11, 11, 11);
-    font-size: 16px;
-    text-transform: uppercase;
+    font-family: "Platypi", serif;
     font-weight: 700;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: #5c0601;
+    color: var(--destaque-cor);
 }
 
 
@@ -76,7 +99,7 @@ h1:hover {
 /* modal */
 
 .btn-modal {
-    background-color: #5c0601;
+    background-color: var(--destaque-cor);
     border: black 2px solid;
     color: white;
     transition: all 0.3s ease-in 0.05s;
@@ -85,7 +108,7 @@ h1:hover {
 .btn-modal:hover {
     background-color: black;
     color: white;
-    border: #5c0601 2px solid;
+    border: var(--destaque-cor) 2px solid;
     padding: 8px 25px;
 }
 
@@ -96,19 +119,26 @@ h1:hover {
   }
 .form-control:focus {
     box-shadow: none;
-    border-color: var(--cor-destaque);
+    border-color: var(--destaque-cor);
 }
 
 /* tabela */
 .table {
-    border-color: #5c0601;
+    border-color: var(--destaque-cor);
   }
   .table thead th {
+    font-family: "Platypi", serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+    text-transform: uppercase;
+    cursor: pointer;
     background-color: #f8f9fa;
-    border-color: #5c0601;
+    border-color: var(--destaque-cor);
   }
   .table tbody td, .table tbody th {
-    border-color: #5c0601;
+    border-color: var(--destaque-cor);
   }
   .table tbody tr:hover {
     background-color: #e9ecef;
@@ -118,7 +148,7 @@ h1:hover {
 /* footer */
 
 footer {
-    background-color: var(--cor-destaque);
+    background-color: var(--destaque-cor);
 }
 .direitos {
     background-color: black;
